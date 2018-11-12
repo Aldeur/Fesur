@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!--Formulario para envio de informacion a la pag de fesur -->
+	<form action="http://sinteg.ferrocarrilesdelsur.cl/saldo-tarjeta" method="post">
+		<input type="text" name="numero_tarjeta" value="54282540"><br>
+		<input id="auto" type="submit" name="enviar">
+	</form>
+<!--trigger click formulario-->
+	<script>
+		$(document).ready(function(){
+    		$('#auto').trigger('click');
+		});
+	</script>
+</body>
+</html>
